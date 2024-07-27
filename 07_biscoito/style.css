@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: linear-gradient(75deg, rgba(25,3,97,1) 0%, rgba(187,0,255,1) 80%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+p, button {
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  background: #FFFFFF;
+  box-shadow: 0 .2rem .4rem rgba(25, 2, 48, 0.567);
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+  width: min(41rem, 90%);
+  height: 45rem;
+  margin-top: -7rem;
+  text-align: center;
+}
+
+/* screen 1 */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  width: 26rem;
+  
+}
+
+h1, .open {
+  color: #34355B;
+}
+
+p {
+  opacity: .8;
+  font-size: 1.4rem;
+}
+
+#cookie-one {
+  width: 26.4rem;
+  height: 22rem;
+  padding: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#cookie-one:hover {
+  transform: scale(0.9);
+  animation: shake 0.2s;
+  animation-iteration-count: infinite;
+}
+
+/* screen2 */
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  width: 29.7rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: #FF9500;
+  color: #FFFFFF;
+  border-radius: .6rem;
+  border: none;
+  cursor: pointer;
+  transition: background .3s;
+
+  padding: 1.2rem;
+  width: 16rem;
+}
+
+button:hover {
+  background-color: #c47405;
+}
+
+#fortune-card {
+  width: 29.3rem;
+  height: 9rem;
+  background-color: #E4EDF1;
+  box-shadow: 0 .2rem .4rem rgba(25, 2, 48, 0.567);
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+  margin: 0.5rem auto;
+  padding: 1.2rem 0 1rem 0;
+
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-out;
+}
+
+#fortune-card.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#cookie-two {
+  width: 23rem;
+  height: 15rem;
+  padding: .2rem;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(0.5px, 0.5px) rotate(1.2deg); }
+}
